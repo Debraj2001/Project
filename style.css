@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#home{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: url('https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.menu{
+    text-align: center;
+}
+.menu i{
+    color: #fff;
+    font-size: 35px;
+    width: 100%;
+}
+.menu p{
+    text-transform: uppercase;
+    font-size: 14px;
+    object-fit: fill;
+}
+.logo h1{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.logo h1 span{
+    color: rgb(236, 162, 0);
+    font-weight: 300;
+}
+.call i{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    border-radius: 50%;
+    padding: 10px;
+    border: 2px solid rgb(0, 183, 255);
+}
+.call span{
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: 700;
+}
+.main-title{
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+.main-title h1{
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 78px;
+}
+.main-title p{
+    width: 92%;
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 1.7;
+}
+.btn{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: rgb(255, 37, 37);
+    margin-top: 15px;
+    border-radius: 30px;
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+.right-title{
+    padding: 20px 40px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+}
+.right-title img{
+    height: 100px;
+    width: 100px;
+    margin: 10px 0;
+}
+.right-title p{
+    color: rgb(255, 238, 0);
+    margin: 10px 0;
+}
+.btn2{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #f75a00;
+    outline: none;
+}
+.btn2 a{
+    text-decoration: none;
+    color: #fff;
+}
+.left-arroy{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+.left-arroy i,.right-arroy i{
+    color: rgb(165, 9, 255);
+    font-size: 25px;
+}
+.right-arroy{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+.next-button{
+    position: absolute;
+    bottom: 30px;
+    left: 15%;
+    display: flex;
+}
+.next-button div.active{
+    background: #fff;
+    width: 50px;
+}
+.next-button div{
+    height: 3px;
+    border-radius: 30px;
+    width: 30px;
+    background: #b4b0b0;
+    margin-right: 5px;
+}
+/* -----------services-------- */
+main{
+    background: rgb(231, 210, 210);
+}
+#services{
+    width: 96%;
+    transform: translate(50px,-50px);
+    background: rgb(248, 228, 228);
+    text-align: center;
+    padding: 30px 80px 70px;
+}
+.title{
+    margin-bottom: 20px;
+}
+.title h1{
+    font-size: 3rem;
+}
+.btn3{
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 20px;
+}
+.btn.active{
+    padding: 10px 50px;
+    font-size: 15px;
+}
+.btn3 a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+.services-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 20px;
+
+}
+.services-card .card{
+    background: #fff;
+    height: 300px;
+}
+.services-card .card img{
+    height: 80%;
+    width: 100%;
+}
+.services-card .card h1{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.left-arroy.active,.right-arroy.active{
+    padding: 10px;
+    background: #000;
+}
+.left-arroy.active i,.right-arroy.active i{
+    color: #fff;
+}
+.left-arroy.active.active2{
+    background: #cfc9c9;
+}
+/* --------astrologers---------- */
+#astrologers{
+    text-align: center;
+}
+.astro-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+.astro-card .card{
+    flex: 0 0 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+.astro-card .card img{
+    border: 5px solid #fff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.astro-card .card p{
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.btn2.active a{
+    color: #000;
+}
+/* ----------shop online ------------ */
+#shop-online{
+    text-align: center;
+    padding: 60px 0;
+    background: rgb(11, 11, 92);
+}
+.title.active h1{
+    color: #fff;
+}
+.btn3.active a{
+    color: #fff;
+}
+.gem{
+    padding: 30px 0;
+    position: relative;
+}
+.gem-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gem-card .card{
+    border-right: 1px solid #000;
+    flex: 0 0 250px;
+    background: #fff;
+    padding: 30px 0;
+}
+.gem-card .card img{
+    height: 100px ;
+    width: 100px;
+}
+.gem-card .card h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+.gem-card .card p{
+    font-size: 12px;
+    color: red;
+    margin: 10px 0;
+}
+.left-arroy.new{
+    left: 11%;
+}
+.right-arroy.new{
+    right: 11%;
+}
+.btn2.new{
+    background: rgb(11, 11, 92);
+}
+.btn2.new a{
+    color: #fff;
+}
+/* -----footer--- */
+#footer{
+    padding: 60px 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#footer .card{
+    flex: 0 0 300px;
+}
+#footer .card a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+#footer .card .contact i{
+    color: #fff;
+    font-size: 15px;
+}
+#footer .card .contact span{
+    color: #fff;
+    font-size: 15px;
+}
+#footer .card h1{
+    color: #fff;
+    font-size: 16px;
+}
+#footer .card .social{
+    display: flex;
+    gap: 10px;
+}
+#footer .card .social i{
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+@media screen and (max-width:768px){
+    .main-title{
+        position: relative;
+    }
+    .right-title{
+        position: relative;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+    #services{
+        transform: translate(0);
+    }
+    .main-title h1{
+        font-size: 4rem;
+    }
+    .btn a{
+        font-size: 14px;
+    }
+    #home{
+        padding-bottom: 60px;
+    }
+
+}
